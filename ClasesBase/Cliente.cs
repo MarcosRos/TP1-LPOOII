@@ -7,6 +7,16 @@ namespace ClasesBase
 {
     public class Cliente
     {
-        private string dni, apellido, nombre, dirección;
+        private string dni, apellido, nombre, dirección;
+
+        public Cliente()
+        {
+
+        }
+
+        public string Dni { get; set; }
+        public string Apellido { get; set; }
+        public string Nombre { get; set; }
+        public string Dirección { get; set; }
     }
 }
