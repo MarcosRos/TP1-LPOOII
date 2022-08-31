@@ -14,8 +14,14 @@ namespace ClasesBase
 
         }
 
-        public string Legajo { get; set; }
-        public string Apellido { get; set; }
-        public string Nombre { get; set; }
+        public string Legajo { get { return legajo; } set { legajo = value; } }
+        public string Apellido { get { return apellido; } set { apellido = value; } }
+        public string Nombre { get { return nombre; } set { nombre = value; } }
+
+        public override string ToString()
+        {
+            return string.Format("{0} {1} {2}",
+                                  legajo, apellido, nombre);
+        }
     }
 }

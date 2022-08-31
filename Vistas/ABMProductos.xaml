@@ -1,8 +1,16 @@
-﻿<Window x:Class="Vistas.ABMProducto"
+﻿<Window x:Class="Vistas.ABMProductos"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ABMProducto" Height="291" Width="675">
     <Grid>
+        <Button BorderBrush="#FFA7A7A7" Content="Salir" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="590,220,0,0" Name="btnSalir" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
         <Button Content="Modificar" Height="32" HorizontalAlignment="Left" Margin="69,0,0,0" Name="btnModificar" VerticalAlignment="Top" Width="63" BorderBrush="#FFA7A7A7" OpacityMask="#FF93E2EF" Foreground="#FFF86449">
             <Button.Background>
                 <RadialGradientBrush>
