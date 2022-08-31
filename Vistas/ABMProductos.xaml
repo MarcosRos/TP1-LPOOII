@@ -86,15 +86,15 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="Código" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblCodigo" VerticalAlignment="Top" />
+        <Label Content="Código" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblCodigo" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,60,0,0" Name="txtCodigo" VerticalAlignment="Top" Width="120" />
-        <Label Content="Categoría" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblCategoria" VerticalAlignment="Top" />
+        <Label Content="Categoría" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblCategoria" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,89,0,0" Name="txtCategoria" VerticalAlignment="Top" Width="120" />
-        <Label Content="Color" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblColor" VerticalAlignment="Top" />
+        <Label Content="Color" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblColor" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,118,0,0" Name="txtColor" VerticalAlignment="Top" Width="120" />
-        <Label Content="Descripción" Height="28" HorizontalAlignment="Left" Margin="223,143,0,0" Name="lblDescripcion" VerticalAlignment="Top" />
+        <Label Content="Descripción" Height="28" HorizontalAlignment="Left" Margin="223,143,0,0" Name="lblDescripcion" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,147,0,0" Name="txtDescripcion" VerticalAlignment="Top" Width="120" />
-        <Label Content="Precio" Height="28" HorizontalAlignment="Left" Margin="223,172,0,0" Name="lblprecio" VerticalAlignment="Top" />
+        <Label Content="Precio" Height="28" HorizontalAlignment="Left" Margin="223,172,0,0" Name="lblprecio" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,176,0,0" Name="txtPrecio" VerticalAlignment="Top" Width="120" />
     </Grid>
 </Window>

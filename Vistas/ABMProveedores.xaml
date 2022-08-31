@@ -86,13 +86,13 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="CUIT" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblCuit" VerticalAlignment="Top" />
+        <Label Content="CUIT" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblCuit" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,60,0,0" Name="txtCuit" VerticalAlignment="Top" Width="120" />
-        <Label Content="RazónSocial" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblRazonSocial" VerticalAlignment="Top" />
+        <Label Content="RazónSocial" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblRazonSocial" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,89,0,0" Name="txtRazonSocial" VerticalAlignment="Top" Width="120" />
-        <Label Content="Domicilio" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblDomicilio" VerticalAlignment="Top" />
+        <Label Content="Domicilio" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblDomicilio" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,118,0,0" Name="txtDomicilio" VerticalAlignment="Top" Width="120" />
-        <Label Content="Teléfono" Height="28" HorizontalAlignment="Left" Margin="223,143,0,0" Name="lblTelefono" VerticalAlignment="Top" />
+        <Label Content="Teléfono" Height="28" HorizontalAlignment="Left" Margin="223,143,0,0" Name="lblTelefono" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,147,0,0" Name="txtTelefono" VerticalAlignment="Top" Width="120" />
     </Grid>
 </Window>
