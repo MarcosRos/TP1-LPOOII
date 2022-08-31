@@ -1,0 +1,95 @@
+﻿<Window x:Class="Vistas.ABMProveedores"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ABMProveedores" Height="291" Width="675">
+    <Grid>
+        <Button BorderBrush="#FFA7A7A7" Content="Salir" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="590,220,0,0" Name="btnSalir" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Modificar" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Margin="69,0,0,0" Name="btnModificar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Nuevo" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Name="btnNuevo" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Eliminar" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Margin="138,0,0,0" Name="btnEliminar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Guardar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="226,0,0,0" Name="btnGuardar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Cancelar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="295,0,0,0" Name="btnCancelar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Primero" Foreground="#FF2B9225" Height="32" HorizontalAlignment="Left" Margin="383,0,0,0" Name="btnPrimero" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Anterior" Foreground="#FF2B9225" Height="32" HorizontalAlignment="Left" Margin="452,0,0,0" Name="btnAnterior" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Siguiente" Foreground="#FF2B9225" Height="32" HorizontalAlignment="Left" Margin="521,0,0,0" Name="btnSiguiente" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button BorderBrush="#FFA7A7A7" Content="Último" Foreground="#FF2B9225" Height="32" HorizontalAlignment="Left" Margin="590,0,0,0" Name="btnUltimo" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFC2EFF9" Offset="0" />
+                    <GradientStop Color="#FFF2F2F2" Offset="1" />
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="CUIT" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblCuit" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="313,60,0,0" Name="txtCuit" VerticalAlignment="Top" Width="120" />
+        <Label Content="RazónSocial" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblRazonSocial" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="313,89,0,0" Name="txtRazonSocial" VerticalAlignment="Top" Width="120" />
+        <Label Content="Domicilio" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblDomicilio" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="313,118,0,0" Name="txtDomicilio" VerticalAlignment="Top" Width="120" />
+        <Label Content="Teléfono" Height="28" HorizontalAlignment="Left" Margin="223,143,0,0" Name="lblTelefono" VerticalAlignment="Top" />
+        <TextBox Height="23" HorizontalAlignment="Left" Margin="313,147,0,0" Name="txtTelefono" VerticalAlignment="Top" Width="120" />
+    </Grid>
+</Window>
