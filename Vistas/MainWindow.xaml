@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="225" Width="367">
     <Grid Width="347" Height="187">
+        <Grid.Background>
+            <ImageBrush ImageSource="/Vistas;component/Images/muebles.jpg" Stretch="Fill" TileMode="None" />
+        </Grid.Background>
         <Button Content="Iniciar Sesion" Margin="131,129,0,0" Name="btnLogin" Height="32" VerticalAlignment="Top" HorizontalAlignment="Left" Width="103" Click="btnLogin_Click" />
         <TextBox Height="23" Margin="123,38,0,0" Name="txtUsuario" VerticalAlignment="Top" HorizontalAlignment="Left" Width="192" />
         <TextBox Height="23" Margin="123,85,0,0" Name="txtPassword" VerticalAlignment="Top" HorizontalAlignment="Left" Width="192" />
