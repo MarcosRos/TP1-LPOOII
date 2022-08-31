@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>8c242c14-d7da-4be7-8637-878a0fed1382</ProjectGuid>
+    <ProjectGuid>{D9E33CA8-8143-4E12-A0AD-B72AC7D83F89}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vistas</RootNamespace>

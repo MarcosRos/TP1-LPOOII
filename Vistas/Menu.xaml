@@ -1,0 +1,12 @@
+﻿<Window x:Class="Vistas.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Menu" Height="228" Width="464">
+    <Grid>
+        <Button Content="Proveedores" Height="23" HorizontalAlignment="Left" Margin="85,77,0,0" Name="btnProveedores" VerticalAlignment="Top" Width="75" />
+        <Button Content="Productos" Height="23" HorizontalAlignment="Left" Margin="301,124,0,0" Name="btnProductos" VerticalAlignment="Top" Width="75" />
+        <Button Content="Vendedores" Height="23" HorizontalAlignment="Left" Margin="85,124,0,0" Name="btnVendedores" VerticalAlignment="Top" Width="75" />
+        <Button Content="Clientes" Height="23" HorizontalAlignment="Left" Margin="301,77,0,0" Name="btnClientes" VerticalAlignment="Top" Width="75" />
+        <Label Content="Seleccione el ABM" Height="28" HorizontalAlignment="Left" Margin="22,34,0,0" Name="lblDecision" VerticalAlignment="Top" />
+    </Grid>
+</Window>
