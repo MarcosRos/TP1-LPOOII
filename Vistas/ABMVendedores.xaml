@@ -78,11 +78,11 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Label Content="Legajo" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblLegajo" VerticalAlignment="Top" />
+        <Label Content="Legajo" Height="28" HorizontalAlignment="Left" Margin="223,56,0,0" Name="lblLegajo" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,60,0,0" Name="txtLegajo" VerticalAlignment="Top" Width="120" />
-        <Label Content="Apellido" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblApellido" VerticalAlignment="Top" />
+        <Label Content="Apellido" Height="28" HorizontalAlignment="Left" Margin="223,85,0,0" Name="lblApellido" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,89,0,0" Name="txtApellido" VerticalAlignment="Top" Width="120" />
-        <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblNombre" VerticalAlignment="Top" />
+        <Label Content="Nombre" Height="28" HorizontalAlignment="Left" Margin="223,114,0,0" Name="lblNombre" VerticalAlignment="Top" Background="White" />
         <TextBox Height="23" HorizontalAlignment="Left" Margin="313,118,0,0" Name="txtNombre" VerticalAlignment="Top" Width="120" />
         <Button BorderBrush="#FFA7A7A7" Content="Salir" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="590,220,0,0" Name="btnSalir" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63" Click="btnSalir_Click">
             <Button.Background>
