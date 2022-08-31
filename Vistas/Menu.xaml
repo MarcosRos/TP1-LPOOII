@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Menu" Height="228" Width="464" Loaded="Window_Loaded">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Vistas;component/Images/muebles.jpg" />
+        </Grid.Background>
         <Button Content="Proveedores" Height="23" HorizontalAlignment="Left" Margin="85,77,0,0" Name="btnProveedores" VerticalAlignment="Top" Width="75" Click="btnProveedores_Click" />
         <Button Content="Productos" Height="23" HorizontalAlignment="Left" Margin="301,124,0,0" Name="btnProductos" VerticalAlignment="Top" Width="75" Click="btnProductos_Click" />
         <Button Content="Vendedores" Height="23" HorizontalAlignment="Left" Margin="85,124,0,0" Name="btnVendedores" VerticalAlignment="Top" Width="75" Click="btnVendedores_Click" />
