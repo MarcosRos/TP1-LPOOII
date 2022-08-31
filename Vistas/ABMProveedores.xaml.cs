@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using ClasesBase;
 
 namespace Vistas
 {
@@ -21,6 +22,88 @@ namespace Vistas
         public ABMProveedores()
         {
             InitializeComponent();
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnNuevo_Click(object sender, RoutedEventArgs e)
+        {
+            txtCuit.Text = "";
+            txtRazonSocial.Text = "";
+            txtDomicilio.Text = "";
+            txtTelefono.Text = "";
+
+            txtCuit.IsEnabled = true;
+            txtRazonSocial.IsEnabled = true;
+            txtDomicilio.IsEnabled = true;
+            txtTelefono.IsEnabled = true;
+
+            btnGuardar.IsEnabled = true;
+            btnCancelar.IsEnabled = true;
+
+            btnNuevo.IsEnabled = false;
+            btnModificar.IsEnabled = false;
+            btnEliminar.IsEnabled = false;
+            btnPrimero.IsEnabled = false;
+            btnSiguiente.IsEnabled = false;
+            btnAnterior.IsEnabled = false;
+            btnUltimo.IsEnabled = false;
+        }
+
+        private void btnGuardar_Click(object sender, RoutedEventArgs e)
+        {
+            Proveedor oProveedor = new Proveedor();
+            oProveedor.Cuit = txtCuit.Text;
+            oProveedor.RazonSocial = txtRazonSocial.Text;
+            oProveedor.Domicilio = txtDomicilio.Text;
+            oProveedor.Telefono = txtTelefono.Text;
+
+            MessageBoxResult msg = MessageBox.Show(oProveedor.ToString(), "Confirmacion", MessageBoxButton.OKCancel, MessageBoxImage.Exclamation);
+            if (msg == MessageBoxResult.OK)
+            {
+                txtCuit.IsEnabled = false;
+                txtRazonSocial.IsEnabled = false;
+                txtDomicilio.IsEnabled = false;
+                txtTelefono.IsEnabled = false;
+
+                btnGuardar.IsEnabled = false;
+                btnCancelar.IsEnabled = false;
+
+                btnNuevo.IsEnabled = true;
+                btnModificar.IsEnabled = true;
+                btnEliminar.IsEnabled = true;
+                btnPrimero.IsEnabled = true;
+                btnSiguiente.IsEnabled = true;
+                btnAnterior.IsEnabled = true;
+                btnUltimo.IsEnabled = true;
+            }
+        }
+
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            txtCuit.Text = "";
+            txtRazonSocial.Text = "";
+            txtDomicilio.Text = "";
+            txtTelefono.Text = "";
+
+            txtCuit.IsEnabled = false;
+            txtRazonSocial.IsEnabled = false;
+            txtDomicilio.IsEnabled = false;
+            txtTelefono.IsEnabled = false;
+
+            btnGuardar.IsEnabled = false;
+            btnCancelar.IsEnabled = false;
+
+            btnNuevo.IsEnabled = true;
+            btnModificar.IsEnabled = true;
+            btnEliminar.IsEnabled = true;
+            btnPrimero.IsEnabled = true;
+            btnSiguiente.IsEnabled = true;
+            btnAnterior.IsEnabled = true;
+            btnUltimo.IsEnabled = true;
         }
     }
 }
