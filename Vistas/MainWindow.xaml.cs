@@ -19,6 +19,8 @@ namespace Vistas
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static string rolUsuario = "";
+
         public MainWindow()
         {
             InitializeComponent();
@@ -32,14 +34,20 @@ namespace Vistas
             if (usuario == "Hola" && password == "1234")
             {
                 //Admin
+                rolUsuario = "Admin";
+                Menu oMenu = new Menu();
+                oMenu.Show();
             }
             else if (usuario == "Adios" && password == "1234")
             {
                 //Vendedor
+                rolUsuario = "Vendedor";
+                Menu oMenu = new Menu();
+                oMenu.Show();
             }
             else 
             {
-                MessageBox.Show("Alerta","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+                MessageBox.Show("Usuario y/o contraseña son incorrectas","Alerta",MessageBoxButton.OK,MessageBoxImage.Error);
             }
         }
     }

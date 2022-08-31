@@ -17,9 +17,9 @@ namespace Vistas
     /// <summary>
     /// Interaction logic for ABMProducto.xaml
     /// </summary>
-    public partial class ABMProducto : Window
+    public partial class ABMProductos : Window
     {
-        public ABMProducto()
+        public ABMProductos()
         {
             InitializeComponent();
         }
@@ -57,7 +57,7 @@ namespace Vistas
             string color = txtColor.Text;
             string descripcion = txtDescripcion.Text;
             decimal precio = Decimal.Parse(txtPrecio.Text);
-            
+
             Producto oProducto = new Producto();
             oProducto.Categoría = categoria;
             oProducto.CodProducto = codigo;
@@ -65,7 +65,7 @@ namespace Vistas
             oProducto.Descripcion = descripcion;
             oProducto.Precio = precio;
 
-            MessageBoxResult msg=MessageBox.Show(oProducto.ToString(),"Confirmacion",MessageBoxButton.OKCancel,MessageBoxImage.Exclamation);
+            MessageBoxResult msg = MessageBox.Show(oProducto.ToString(), "Confirmacion", MessageBoxButton.OKCancel, MessageBoxImage.Exclamation);
             if (msg == MessageBoxResult.OK)
             {
                 txtCategoria.IsEnabled = false;
@@ -95,7 +95,7 @@ namespace Vistas
             txtColor.Text = "";
             txtDescripcion.Text = "";
             txtPrecio.Text = "";
-            
+
             txtCategoria.IsEnabled = false;
             txtCodigo.IsEnabled = false;
             txtColor.IsEnabled = false;
@@ -112,7 +112,7 @@ namespace Vistas
             btnSiguiente.IsEnabled = true;
             btnAnterior.IsEnabled = true;
             btnUltimo.IsEnabled = true;
-            
+
         }
         //clickSalir (){this.Close();}
     }

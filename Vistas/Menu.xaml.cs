@@ -22,5 +22,53 @@ namespace Vistas
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Admin
+            if (MainWindow.rolUsuario == "Admin")
+            {
+                btnProveedores.IsEnabled = true;
+                btnClientes.IsEnabled = true;
+                btnProductos.IsEnabled = true;
+                btnVendedores.IsEnabled = true;
+
+                //lblCargo.Content = "Administrador"
+            }
+            //Vendedor
+            else
+            {
+                btnProveedores.IsEnabled = true;
+                btnClientes.IsEnabled = true;
+                btnProductos.IsEnabled = true;
+                btnVendedores.IsEnabled = false;
+
+                //lblCargo.Text = "Vendedor"
+            }
+        }
+
+        private void btnProductos_Click(object sender, RoutedEventArgs e)
+        {
+            ABMProductos oABMProductos = new ABMProductos();
+            oABMProductos.Show();
+        }
+
+        private void btnClientes_Click(object sender, RoutedEventArgs e)
+        {
+            ABMClientes oABMClientes = new ABMClientes();
+            oABMClientes.Show();
+        }
+
+        private void btnProveedores_Click(object sender, RoutedEventArgs e)
+        {
+            ABMProveedores oABMProveedores = new ABMProveedores();
+            oABMProveedores.Show();
+        }
+
+        private void btnVendedores_Click(object sender, RoutedEventArgs e)
+        {
+            ABMVendedores oABMVendedores = new ABMVendedores();
+            oABMVendedores.Show();
+        }
     }
 }
