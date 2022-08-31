@@ -23,8 +23,8 @@ namespace ClasesBase
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3} {4}",
-                                  codProducto, categoria, color, descripcion, precio);
+            string msg = "Desea guardar este producto?"+"\nCodigo: " + codProducto + "\nCategoria: " + categoria + "\nColor: " + color + "\nDescripcion: " + descripcion + "\nPrecio: " + precio;
+            return msg;
         }
     }
 }
