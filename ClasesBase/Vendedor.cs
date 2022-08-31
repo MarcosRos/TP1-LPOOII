@@ -20,8 +20,8 @@ namespace ClasesBase
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2}",
-                                  legajo, apellido, nombre);
+            string msg = "Desea guardar este vendedor?" + "\nLegajo: " + legajo + "\nApellido: " + apellido + "\nNombre: " + nombre;
+            return msg;
         }
     }
 }

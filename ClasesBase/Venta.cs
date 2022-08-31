@@ -31,8 +31,8 @@ namespace ClasesBase
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3} {4} {5} {6} {7}",
-                                  nroFactura, cantidad, precio, importe, legajo, dni, codProducto, fechaFactura);
+            string msg = "Desea guardar esta venta?" + "\nNro. Factura: " + nroFactura + "\nCantidad: " + cantidad + "\nPrecio: " + precio + "\nImporte: " + importe + "\nLegajo: " + legajo + "\nDNI: " + dni + "\nCodigo de Producto: " + codProducto + "\nFecha Factura: " + fechaFactura;
+            return msg;
         }
     }
 }

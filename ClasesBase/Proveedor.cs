@@ -21,8 +21,8 @@ namespace ClasesBase
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3}",
-                                  cuit, razonSocial, domicilio, telefono);
+            string msg = "Desea guardar este proveedor?" + "\nCUIT: " + cuit + "\nRazon Social: " + razonSocial + "\nDomicilio: " + domicilio + "\nTelefono: " + telefono ;
+            return msg;
         }
     }
 }

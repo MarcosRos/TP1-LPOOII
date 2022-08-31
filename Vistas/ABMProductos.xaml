@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ABMProducto" Height="291" Width="675">
     <Grid>
-        <Button BorderBrush="#FFA7A7A7" Content="Salir" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="590,220,0,0" Name="btnSalir" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+        <Button BorderBrush="#FFA7A7A7" Content="Salir" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="590,220,0,0" Name="btnSalir" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63" Click="btnSalir_Click">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFC2EFF9" Offset="0" />
