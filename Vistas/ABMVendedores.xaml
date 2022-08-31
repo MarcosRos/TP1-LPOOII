@@ -3,6 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ABMVendedores" Height="291" Width="675">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Vistas;component/Images/muebles.jpg" />
+        </Grid.Background>
         <Button BorderBrush="#FFA7A7A7" Content="Modificar" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Margin="69,0,0,0" Name="btnModificar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
             <Button.Background>
                 <RadialGradientBrush>
