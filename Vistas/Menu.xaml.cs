@@ -70,5 +70,12 @@ namespace Vistas
             ABMVendedores oABMVendedores = new ABMVendedores();
             oABMVendedores.ShowDialog();
         }
+
+        private void btnCerrarSesion_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow login = new MainWindow();
+            login.Show();
+            this.Close();
+        }
     }
 }
