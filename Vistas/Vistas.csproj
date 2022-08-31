@@ -59,7 +59,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ABMProducto.xaml">
+    <Page Include="ABMProductos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -78,8 +78,8 @@
     <Compile Include="ABMClientes.xaml.cs">
       <DependentUpon>ABMClientes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ABMProducto.xaml.cs">
-      <DependentUpon>ABMProducto.xaml</DependentUpon>
+    <Compile Include="ABMProductos.xaml.cs">
+      <DependentUpon>ABMProductos.xaml</DependentUpon>
     </Compile>
     <Compile Include="ABMProveedores.xaml.cs">
       <DependentUpon>ABMProveedores.xaml</DependentUpon>
@@ -129,6 +129,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\muebles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClasesBase\ClasesBase.csproj">
+      <Project>{A3077C63-23B4-47C5-AF7D-6B51E281B26E}</Project>
+      <Name>ClasesBase</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
