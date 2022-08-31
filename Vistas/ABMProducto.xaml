@@ -11,7 +11,7 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button BorderBrush="#FFA7A7A7" Content="Nuevo" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Name="btnNuevo" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+        <Button BorderBrush="#FFA7A7A7" Content="Nuevo" Foreground="#FFF86449" Height="32" HorizontalAlignment="Left" Name="btnNuevo" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63" Click="btnNuevo_Click">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFC2EFF9" Offset="0" />
@@ -27,7 +27,7 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button BorderBrush="#FFA7A7A7" Content="Guardar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="226,0,0,0" Name="btnGuardar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+        <Button BorderBrush="#FFA7A7A7" Content="Guardar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="226,0,0,0" Name="btnGuardar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63" Click="btnGuardar_Click">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFC2EFF9" Offset="0" />
@@ -35,7 +35,7 @@
                 </RadialGradientBrush>
             </Button.Background>
         </Button>
-        <Button BorderBrush="#FFA7A7A7" Content="Cancelar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="295,0,0,0" Name="btnCancelar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63">
+        <Button BorderBrush="#FFA7A7A7" Content="Cancelar" Foreground="#FF4D76DD" Height="32" HorizontalAlignment="Left" Margin="295,0,0,0" Name="btnCancelar" OpacityMask="#FF93E2EF" VerticalAlignment="Top" Width="63" Click="btnCancelar_Click">
             <Button.Background>
                 <RadialGradientBrush>
                     <GradientStop Color="#FFC2EFF9" Offset="0" />
