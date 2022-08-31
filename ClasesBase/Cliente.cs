@@ -21,8 +21,9 @@ namespace ClasesBase
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2} {3}",
-                                  dni, apellido, nombre, direccion);
+            string msg = "Desea guardar este cliente?" + "\nDNI: " + dni + "\nApellido: " + apellido + "\nNombre: " + nombre + "\nDireccion: " + direccion;
+            return msg;
         }
+
     }
 }
