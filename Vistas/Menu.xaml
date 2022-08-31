@@ -10,6 +10,7 @@
         <Button Content="Productos" Height="23" HorizontalAlignment="Left" Margin="301,124,0,0" Name="btnProductos" VerticalAlignment="Top" Width="75" Click="btnProductos_Click" />
         <Button Content="Vendedores" Height="23" HorizontalAlignment="Left" Margin="85,124,0,0" Name="btnVendedores" VerticalAlignment="Top" Width="75" Click="btnVendedores_Click" />
         <Button Content="Clientes" Height="23" HorizontalAlignment="Left" Margin="301,77,0,0" Name="btnClientes" VerticalAlignment="Top" Width="75" Click="btnClientes_Click" />
-        <Label Content="Seleccione el ABM" Height="28" HorizontalAlignment="Left" Margin="22,34,0,0" Name="lblDecision" VerticalAlignment="Top" />
+        <Label Content="Seleccione el ABM" Height="28" HorizontalAlignment="Left" Margin="22,34,0,0" Name="lblDecision" VerticalAlignment="Top" Background="White" />
+        <Button Content="Cerrar Sesión" Height="23" HorizontalAlignment="Left" Margin="355,154,0,0" Name="btnCerrarSesion" VerticalAlignment="Top" Width="75" Click="btnCerrarSesion_Click" />
     </Grid>
 </Window>

@@ -52,18 +52,12 @@ namespace Vistas
 
         private void btnGuardar_Click(object sender, RoutedEventArgs e)
         {
-            string categoria = txtCategoria.Text;
-            string codigo = txtCodigo.Text;
-            string color = txtColor.Text;
-            string descripcion = txtDescripcion.Text;
-            decimal precio = Decimal.Parse(txtPrecio.Text);
-
             Producto oProducto = new Producto();
-            oProducto.Categoría = categoria;
-            oProducto.CodProducto = codigo;
-            oProducto.Color = color;
-            oProducto.Descripcion = descripcion;
-            oProducto.Precio = precio;
+            oProducto.Categoría = txtCategoria.Text;
+            oProducto.CodProducto = txtCodigo.Text;
+            oProducto.Color = txtColor.Text;
+            oProducto.Descripcion = txtDescripcion.Text;
+            oProducto.Precio = Decimal.Parse(txtPrecio.Text);
 
             MessageBoxResult msg = MessageBox.Show(oProducto.ToString(), "Confirmacion", MessageBoxButton.OKCancel, MessageBoxImage.Exclamation);
             if (msg == MessageBoxResult.OK)
@@ -119,6 +113,19 @@ namespace Vistas
         {
             this.Close();
         }
-        //clickSalir (){
+
+        private void txtPrecio_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            bool approvedDecimalPoint = false;
+
+            if (e.Text == ".")
+            {
+                if (!((TextBox)sender).Text.Contains("."))
+                    approvedDecimalPoint = true;
+            }
+
+            if (!(char.IsDigit(e.Text, e.Text.Length - 1) || approvedDecimalPoint))
+                e.Handled = true;
+        }
     }
 }
