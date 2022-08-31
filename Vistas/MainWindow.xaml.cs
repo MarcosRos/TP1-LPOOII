@@ -29,21 +29,29 @@ namespace Vistas
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
             string usuario = txtUsuario.Text;
-            string password = txtPassword.Text;
+            string password = txtPassword.Password;
 
-            if (usuario == "Hola" && password == "1234")
+            if (usuario == "Marcos" && password == "1234")
             {
                 //Admin
                 rolUsuario = "Admin";
-                Menu oMenu = new Menu();
-                oMenu.Show();
+                if (MessageBoxResult.OK == MessageBox.Show("Acceso correcto con el rol de Administador", "Login Exitoso", MessageBoxButton.OK, MessageBoxImage.Information))
+                {
+                    Menu oMenu = new Menu();
+                    oMenu.Show();
+                    this.Close();
+                }
             }
-            else if (usuario == "Adios" && password == "1234")
+            else if (usuario == "Lucas" && password == "1234")
             {
                 //Vendedor
                 rolUsuario = "Vendedor";
-                Menu oMenu = new Menu();
-                oMenu.Show();
+                if (MessageBoxResult.OK == MessageBox.Show("Acceso correcto con el rol de Vendedor", "Login Exitoso", MessageBoxButton.OK, MessageBoxImage.Information))
+                {
+                    Menu oMenu = new Menu();
+                    oMenu.Show();
+                    this.Close();
+                }
             }
             else 
             {
