@@ -50,25 +50,25 @@ namespace Vistas
         private void btnProductos_Click(object sender, RoutedEventArgs e)
         {
             ABMProductos oABMProductos = new ABMProductos();
-            oABMProductos.Show();
+            oABMProductos.ShowDialog();
         }
 
         private void btnClientes_Click(object sender, RoutedEventArgs e)
         {
             ABMClientes oABMClientes = new ABMClientes();
-            oABMClientes.Show();
+            oABMClientes.ShowDialog();
         }
 
         private void btnProveedores_Click(object sender, RoutedEventArgs e)
         {
             ABMProveedores oABMProveedores = new ABMProveedores();
-            oABMProveedores.Show();
+            oABMProveedores.ShowDialog();
         }
 
         private void btnVendedores_Click(object sender, RoutedEventArgs e)
         {
             ABMVendedores oABMVendedores = new ABMVendedores();
-            oABMVendedores.Show();
+            oABMVendedores.ShowDialog();
         }
     }
 }
