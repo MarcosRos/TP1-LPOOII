@@ -24,5 +24,23 @@ namespace Vistas
             InitializeComponent();
         }
 
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            string usuario = txtUsuario.Text;
+            string password = txtPassword.Text;
+
+            if (usuario == "Hola" && password == "1234")
+            {
+                //Admin
+            }
+            else if (usuario == "Adios" && password == "1234")
+            {
+                //Vendedor
+            }
+            else 
+            {
+                MessageBox.Show("Alerta","Error",MessageBoxButton.OK,MessageBoxImage.Error);
+            }
+        }
     }
 }
