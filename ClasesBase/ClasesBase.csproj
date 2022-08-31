@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A0D35B73-0044-4137-91D8-0B92315C4FAB}</ProjectGuid>
+    <ProjectGuid>{A3077C63-23B4-47C5-AF7D-6B51E281B26E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ClasesBase</RootNamespace>
@@ -46,6 +46,9 @@
     <Compile Include="Proveedor.cs" />
     <Compile Include="Vendedor.cs" />
     <Compile Include="Venta.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
